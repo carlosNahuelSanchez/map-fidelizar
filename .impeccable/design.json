@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T21:22:37Z",
+  "title": "Design System: Relevamiento",
+  "extensions": {
+    "colorMeta": {
+      "accent-teal": { "role": "primary", "displayName": "Survey Teal", "canonical": "#16877f", "tonalRamp": ["oklch(15% 0.07 184)", "oklch(25% 0.07 184)", "oklch(35% 0.07 184)", "oklch(45% 0.07 184)", "oklch(55% 0.07 184)", "oklch(65% 0.07 184)", "oklch(78% 0.05 184)", "oklch(95% 0.02 184)"] },
+      "accent-terracotta": { "role": "secondary", "displayName": "Terracotta", "canonical": "#c86e52", "tonalRamp": ["oklch(15% 0.08 39)", "oklch(25% 0.08 39)", "oklch(35% 0.08 39)", "oklch(45% 0.08 39)", "oklch(55% 0.08 39)", "oklch(65% 0.08 39)", "oklch(78% 0.06 39)", "oklch(95% 0.02 39)"] },
+      "accent-ochre": { "role": "tertiary", "displayName": "Ochre", "canonical": "#c39a36", "tonalRamp": ["oklch(15% 0.09 85)", "oklch(25% 0.09 85)", "oklch(35% 0.09 85)", "oklch(45% 0.09 85)", "oklch(55% 0.09 85)", "oklch(65% 0.09 85)", "oklch(78% 0.06 85)", "oklch(95% 0.02 85)"] },
+      "page-paper": { "role": "neutral", "displayName": "Paper Green", "canonical": "#f4f6f3", "tonalRamp": ["oklch(15% 0.01 145)", "oklch(25% 0.01 145)", "oklch(35% 0.01 145)", "oklch(45% 0.01 145)", "oklch(55% 0.01 145)", "oklch(65% 0.01 145)", "oklch(78% 0.01 145)", "oklch(95% 0.01 145)"] },
+      "map-field": { "role": "neutral", "displayName": "Map Mist", "canonical": "#edf2ee", "tonalRamp": ["oklch(15% 0.01 145)", "oklch(25% 0.01 145)", "oklch(35% 0.01 145)", "oklch(45% 0.01 145)", "oklch(55% 0.01 145)", "oklch(65% 0.01 145)", "oklch(78% 0.01 145)", "oklch(95% 0.01 145)"] },
+      "text-primary": { "role": "neutral", "displayName": "Forest Ink", "canonical": "#25342f", "tonalRamp": ["oklch(15% 0.02 165)", "oklch(25% 0.02 165)", "oklch(35% 0.02 165)", "oklch(45% 0.02 165)", "oklch(55% 0.02 165)", "oklch(65% 0.02 165)", "oklch(78% 0.02 165)", "oklch(95% 0.01 165)"] },
+      "text-heading": { "role": "neutral", "displayName": "Deep Heading Green", "canonical": "#20332d", "tonalRamp": ["oklch(15% 0.02 165)", "oklch(25% 0.02 165)", "oklch(35% 0.02 165)", "oklch(45% 0.02 165)", "oklch(55% 0.02 165)", "oklch(65% 0.02 165)", "oklch(78% 0.02 165)", "oklch(95% 0.01 165)"] },
+      "text-muted": { "role": "neutral", "displayName": "Sage Gray", "canonical": "#788780", "tonalRamp": ["oklch(15% 0.02 160)", "oklch(25% 0.02 160)", "oklch(35% 0.02 160)", "oklch(45% 0.02 160)", "oklch(55% 0.02 160)", "oklch(65% 0.02 160)", "oklch(78% 0.02 160)", "oklch(95% 0.01 160)"] },
+      "text-subtle": { "role": "neutral", "displayName": "Soft Sage", "canonical": "#89958f", "tonalRamp": ["oklch(15% 0.01 160)", "oklch(25% 0.01 160)", "oklch(35% 0.01 160)", "oklch(45% 0.01 160)", "oklch(55% 0.01 160)", "oklch(65% 0.01 160)", "oklch(78% 0.01 160)", "oklch(95% 0.01 160)"] },
+      "border-soft": { "role": "neutral", "displayName": "Soft Divider", "canonical": "#dce3de", "tonalRamp": ["oklch(15% 0.01 150)", "oklch(25% 0.01 150)", "oklch(35% 0.01 150)", "oklch(45% 0.01 150)", "oklch(55% 0.01 150)", "oklch(65% 0.01 150)", "oklch(78% 0.01 150)", "oklch(95% 0.01 150)"] },
+      "province-neutral": { "role": "neutral", "displayName": "Province Mist", "canonical": "#dfe7e2", "tonalRamp": ["oklch(15% 0.01 150)", "oklch(25% 0.01 150)", "oklch(35% 0.01 150)", "oklch(45% 0.01 150)", "oklch(55% 0.01 150)", "oklch(65% 0.01 150)", "oklch(78% 0.01 150)", "oklch(95% 0.01 150)"] },
+      "control-surface": { "role": "neutral", "displayName": "Control White", "canonical": "#fbfcfa", "tonalRamp": ["oklch(15% 0.005 145)", "oklch(25% 0.005 145)", "oklch(35% 0.005 145)", "oklch(45% 0.005 145)", "oklch(55% 0.005 145)", "oklch(65% 0.005 145)", "oklch(78% 0.005 145)", "oklch(95% 0.005 145)"] },
+      "control-dark": { "role": "neutral", "displayName": "Deep Green", "canonical": "#253d35", "tonalRamp": ["oklch(15% 0.03 165)", "oklch(25% 0.03 165)", "oklch(35% 0.03 165)", "oklch(45% 0.03 165)", "oklch(55% 0.03 165)", "oklch(65% 0.03 165)", "oklch(78% 0.02 165)", "oklch(95% 0.01 165)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Page heading", "purpose": "The main title for the map consultation surface." },
+      "title": { "displayName": "Section title", "purpose": "Map and panel section headings." },
+      "body": { "displayName": "Body", "purpose": "Explanatory copy, selector labels, and controls." },
+      "label": { "displayName": "Tracked label", "purpose": "Small uppercase section labels." }
+    },
+    "shadows": [
+      { "name": "map-control", "value": "0 3px 14px rgb(37 52 47 / 10%)", "purpose": "Separates zoom controls from map detail." },
+      { "name": "map-tooltip", "value": "0 3px 12px rgb(37 52 47 / 18%)", "purpose": "Keeps province labels readable over the map." }
+    ],
+    "motion": [
+      { "name": "province-fill", "value": "fill-opacity 160ms ease", "purpose": "Softens province hover and focus fill changes." },
+      { "name": "loading-spin", "value": "800ms linear infinite", "purpose": "Map boundary loading indicator; reduced-motion rules shorten animation." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "description": "Compact brand link and country context, with a divider below.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#inicio\"><span class=\"ds-mark\" aria-hidden=\"true\"><i></i></span>Relevamiento</a><span class=\"ds-country\">Argentina</span></nav>",
+      "css": ".ds-nav { display:flex; align-items:center; justify-content:space-between; padding:20px 0; border-bottom:1px solid #dce3de; color:#25342f; font:600 14px 'Avenir Next',Avenir,'Segoe UI',sans-serif; } .ds-nav-link { display:flex; align-items:center; gap:12px; color:inherit; text-decoration:none; } .ds-country { color:#61706a; font-weight:400; } .ds-mark { position:relative; display:grid; width:25px; height:25px; place-items:center; border:1px solid #cbd7d0; border-radius:8px; background:#e8efea; } .ds-mark:before,.ds-mark:after,.ds-mark i { position:absolute; display:block; content:''; border:1px solid #16877f; border-radius:50%; } .ds-mark:before { width:15px; height:15px; } .ds-mark:after { width:8px; height:8px; } .ds-mark i { width:2px; height:2px; background:#16877f; }"
+    },
+    {
+      "name": "Province Selector",
+      "kind": "button",
+      "refersTo": "province-selector",
+      "description": "Full-width province row with highlight swatch and focus state.",
+      "html": "<button class=\"ds-province\" aria-pressed=\"false\"><span class=\"ds-province-label\"><i></i>Formosa</span><span class=\"ds-state\">Ver</span></button>",
+      "css": ".ds-province { display:flex; align-items:center; justify-content:space-between; width:100%; min-height:56px; padding:12px 0; border:0; border-bottom:1px solid #dce3de; background:transparent; color:#25342f; text-align:left; font:500 15px 'Avenir Next',Avenir,'Segoe UI',sans-serif; cursor:pointer; transition:color 160ms ease; } .ds-province:hover { color:#20332d; } .ds-province:focus-visible { outline:2px solid #16877f; outline-offset:2px; } .ds-province-label { display:flex; align-items:center; gap:12px; } .ds-province-label i { width:12px; height:12px; border-radius:3px; background:#16877f; } .ds-state { color:#89958f; font-size:11px; font-weight:500; }"
+    },
+    {
+      "name": "Retry Button",
+      "kind": "button",
+      "refersTo": "retry-button",
+      "description": "Map load recovery action shown in the error state.",
+      "html": "<button class=\"ds-retry\">Reintentar</button>",
+      "css": ".ds-retry { display:block; margin:20px auto 0; padding:10px 16px; border:0; border-radius:10px; background:#253d35; color:#fff; font:500 14px 'Avenir Next',Avenir,'Segoe UI',sans-serif; cursor:pointer; transition:transform 120ms ease; } .ds-retry:active { transform:scale(.98); } .ds-retry:focus-visible { outline:2px solid #16877f; outline-offset:2px; }"
+    },
+    {
+      "name": "Map Frame",
+      "kind": "custom",
+      "refersTo": "map-frame",
+      "description": "Clipped, bordered canvas for province geometry, states, and source credit.",
+      "html": "<div class=\"ds-map-frame\"><div class=\"ds-map-placeholder\">Argentina</div><span class=\"ds-map-credit\">Límites: IGN · Datos Argentina</span></div>",
+      "css": ".ds-map-frame { position:relative; min-height:440px; overflow:hidden; border:1px solid #e1e7e2; border-radius:14px; background:#edf2ee; } .ds-map-placeholder { display:grid; min-height:440px; place-items:center; color:#788780; font:600 18px 'Avenir Next',Avenir,'Segoe UI',sans-serif; } .ds-map-credit { position:absolute; right:10px; bottom:8px; padding:4px 7px; border-radius:5px; background:rgb(248 250 248 / 86%); color:#66766e; font:400 10px/1.25 'Avenir Next',Avenir,'Segoe UI',sans-serif; }"
+    },
+    {
+      "name": "Province Tooltip",
+      "kind": "custom",
+      "description": "Sticky province label displayed over the map.",
+      "html": "<span class=\"ds-tooltip\">Córdoba</span>",
+      "css": ".ds-tooltip { display:inline-block; padding:6px 9px; border:0; border-radius:7px; background:#253d35; color:#fff; box-shadow:0 3px 12px rgb(37 52 47 / 18%); font:600 12px 'Avenir Next',Avenir,'Segoe UI',sans-serif; }"
+    },
+    {
+      "name": "Map Zoom Controls",
+      "kind": "custom",
+      "description": "Light stacked zoom controls with hover emphasis and a quiet shadow.",
+      "html": "<div class=\"ds-zoom\"><button aria-label=\"Acercar\">+</button><button aria-label=\"Alejar\">−</button></div>",
+      "css": ".ds-zoom { display:inline-flex; flex-direction:column; overflow:hidden; border:1px solid #d9e1dc; border-radius:9px; background:#fbfcfa; box-shadow:0 3px 14px rgb(37 52 47 / 10%); } .ds-zoom button { width:34px; height:34px; border:0; background:#fbfcfa; color:#32443d; font:500 20px/34px 'Avenir Next',Avenir,'Segoe UI',sans-serif; cursor:pointer; } .ds-zoom button+button { border-top:1px solid #e3e9e5; } .ds-zoom button:hover,.ds-zoom button:focus-visible { background:#f0f5f1; color:#16877f; } .ds-zoom button:focus-visible { outline:2px solid #16877f; outline-offset:-2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Provincial Field Map",
+    "overview": "The name describes the implemented surface: a national province map paired with a compact consultation panel. The interface is quiet and information-led, using a pale green-gray canvas, restrained borders, and small controls so provincial boundaries remain the focus.\n\nThe current map highlights Formosa, Córdoba, and Buenos Aires with separate key colors. The boundary source is credited in the interface. There are no locale markers because location records have not been supplied; future location data should enter as sourced geographic information within this existing map context.",
+    "keyCharacteristics": ["Muted, green-tinted neutrals around a prominent provincial map.", "Three distinct colors identify the requested provinces.", "Compact labels, thin dividers, and restrained control shadows.", "Location content appears only when its source data is available."],
+    "rules": [
+      { "name": "The Source-True Map Rule", "body": "Keep the three existing highlight colors tied to their named provinces, and show locale marks only after coordinates and associated data have a known source.", "section": "colors" }
+    ],
+    "dos": ["Do keep Formosa, Córdoba, and Buenos Aires mapped to their existing teal, terracotta, and ochre colors.", "Do credit geographic boundaries and keep supporting information visually quieter than the map.", "Do add future location marks only from supplied coordinate and location records.", "Do preserve visible keyboard focus and reduced-motion behavior when extending interactive controls."],
+    "donts": ["Don't place illustrative or sample locale markers on the map before location data is supplied.", "Don't use the province highlight colors for unrelated meanings without updating the map key.", "Don't add a heavy card treatment that competes with the provincial map."]
+  }
+}
