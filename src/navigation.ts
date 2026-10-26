@@ -5,8 +5,6 @@ export type Destination = { point: Point; label: string };
 export type UserPosition = Point & { accuracy: number; timestamp: number };
 export type MapIntent = (
   | { kind: "country" }
-  | { kind: "province"; province: string }
-  | { kind: "local"; localId: string }
   | { kind: "zoom"; amount: number }
   | { kind: "route" }
 );

@@ -8,8 +8,8 @@ export default defineConfig({
     registerType: "autoUpdate",
     includeAssets: ["icons/apple-touch-icon.png", "icons/app-icon.svg"],
     manifest: {
-      id: "/", name: "Relevamiento · Mapa de locales", short_name: "Relevamiento",
-      description: "Comercios de cercanía, ubicación y recorridos por Argentina.",
+      id: "/", name: "Full Map · Argentina", short_name: "Full Map",
+      description: "Mapa de Argentina con ubicación y recorridos por calles.",
       lang: "es-AR", start_url: "/", scope: "/", display: "standalone",
       theme_color: "#253d35", background_color: "#f4f6f3",
       icons: [
