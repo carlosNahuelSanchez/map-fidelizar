@@ -11,13 +11,13 @@ export function useRouting(destination: Destination | null, position: UserPositi
   const lastRecalculation = useRef(0);
   const hasPosition = position !== null;
   useEffect(() => { latestPosition.current = position; }, [position]);
-  useEffect(() => { setRoute(null); setActive(false); }, [destination]);
+  useEffect(() => { setRoute(null); setActive(Boolean(destination)); }, [destination]);
   useEffect(() => {
     const origin = latestPosition.current;
     if (!destination || !origin || !hasPosition) { setRoute(null); setStatus({ kind: "idle" }); return; }
     const controller = new AbortController();
     let timedOut = false;
-    const timeout = window.setTimeout(() => { timedOut = true; controller.abort(); }, 18000);
+    const timeout = setTimeout(() => { timedOut = true; controller.abort(); }, 18000);
     setStatus({ kind: "loading" });
     lastRecalculation.current = Date.now();
     void calculateRoute(origin, destination.point, controller.signal).then(result => {
@@ -26,8 +26,8 @@ export function useRouting(destination: Destination | null, position: UserPositi
       if (controller.signal.aborted && !timedOut) return;
       const message = timedOut ? "El servicio de rutas tardó demasiado. Reintentá o abrí Google Maps." : error instanceof Error ? error.message : "No pudimos calcular la ruta.";
       setStatus({ kind: "error", message });
-    }).finally(() => window.clearTimeout(timeout));
-    return () => { window.clearTimeout(timeout); controller.abort(); };
+    }).finally(() => clearTimeout(timeout));
+    return () => { clearTimeout(timeout); controller.abort(); };
   }, [destination, hasPosition, revision]);
   const progress = useMemo(() => route && position ? routeProgress(route, position) : null, [route, position]);
   const arrived = Boolean(destination && position && position.accuracy <= 60 && distanceBetween(position, destination.point) < 35);

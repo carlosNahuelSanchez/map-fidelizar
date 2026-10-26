@@ -3,13 +3,6 @@ import { z } from "zod";
 export type Point = { lat: number; lng: number };
 export type Destination = { point: Point; label: string };
 export type UserPosition = Point & { accuracy: number; timestamp: number };
-export type MapIntent = (
-  | { kind: "country" }
-  | { kind: "zoom"; amount: number }
-  | { kind: "route" }
-);
-export type MapCommand = { serial: number } & MapIntent;
-
 const CoordinateSchema = z.tuple([z.number(), z.number()]);
 const GeometrySchema = z.object({ type: z.literal("LineString"), coordinates: z.array(CoordinateSchema).min(2) });
 const StepSchema = z.object({

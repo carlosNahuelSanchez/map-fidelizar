@@ -1,5 +1,10 @@
 # Dependencias y cachés de Node
 node_modules/
+android/
+ios/
+.expo/
+.credentials/
+artifacts/
 .npm/
 .pnpm-store/
 .yarn/cache/
